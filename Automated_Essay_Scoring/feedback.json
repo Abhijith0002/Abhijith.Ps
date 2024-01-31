@@ -1,0 +1,22 @@
+{
+    "0-4": [
+        "Your essay shows room for improvement. Focus on strengthening your arguments and refining your writing style.",
+        "Consider paying closer attention to grammar and spelling in your next essay to boost your score.",
+        "Your essay demonstrates potential, but there are areas that need enhancement. Work on clarity and organization."
+    ],
+    "5-7": [
+        "Well done! Your essay is solid, but there's still room for improvement. Consider refining your ideas and providing more detailed examples.",
+        "You're on the right track! Focus on maintaining consistency in your writing style and addressing any minor errors for a higher score.",
+        "Your essay is good, but aim for more depth in your analysis and try to avoid repetitive phrases for a stronger impact."
+    ],
+    "8-11": [
+        "Excellent work! Your essay showcases strong arguments and effective communication. Keep up the good work!",
+        "Impressive! Your essay displays a high level of proficiency. Continue to refine your ideas and maintain this level of writing.",
+        "Great job! Your essay is well-crafted, demonstrating advanced writing skills and insightful analysis."
+    ],
+    "12-15": [
+        "Outstanding! Your essay is exceptional, displaying a deep understanding of the topic and sophisticated writing. Congratulations!",
+        "You've excelled in your essay! Your arguments are compelling, and your writing is top-notch. Keep up the fantastic work!",
+        "Brilliant work! Your essay is exemplary, showcasing creativity, clarity, and a thorough understanding of the subject."
+    ]
+}
