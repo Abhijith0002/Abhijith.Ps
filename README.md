@@ -26,15 +26,28 @@ Automated essay scoring systems offer several advantages, including efficiency, 
 
 ### Problem Statement
 The primary objective is to develop a system capable of accurately grading essays based on various criteria such as content understanding, grammar, semantics, and overall quality. Additionally, the system should address challenges related to bias and fairness across different demographic groups and sensitivity to essay prompts.
+
 ### Data
 The project uses a dataset of essays sourced from Kaggle, consisting of 12,000 essays across different topics and writing prompts. The dataset is preprocessed to correct spelling and grammar errors using the PySpellChecker library.
+
 ### Techniques
 + Word Embeddings: Essays are represented as word vectors using Word2Vec to capture semantic relationships between words.
 + Feature Engineering: Various features such as word count, grammar corrections, sentence count, and part-of-speech tags are extracted from the essays to provide additional context for the scoring model.
 + Deep Learning: A Multilayer Perceptron (MLP) model is used for scoring essays based on the extracted features and word embeddings.
 + Evaluation: The model's performance is evaluated using metrics such as Mean Squared Error (MSE) and Cohen's Kappa score.
+
 ### Experimentation and Validation
 The model is trained on a combination of training, validation, and test sets. Hyperparameters are tuned to optimize performance, and the model's accuracy is validated using cross-validation and test datasets. Additionally, the system incorporates feedback mechanisms to provide meaningful insights and feedback to users.
+
+### Sub-Microservices
+1. **Text Parsing**
+   The Text Parsing microservice will be responsible for breaking down essays into manageable components for analysis. It will preprocess the text, tokenize sentences and words, and extract relevant features for further analysis.
+2. **Grammar Checking**
+   The Grammar Checking microservice will identify and correct grammatical errors in the essays. It will leverage language models and grammar rules to detect spelling mistakes, punctuation errors, and syntactic issues.
+3. **Semantic Analysis**
+   The Semantic Analysis microservice will focus on understanding the meaning and context of the essays. It will employ semantic similarity measures, topic modeling techniques, and sentiment analysis to assess the coherence, relevance, and clarity of the content.
+4. **Scoring and Feedback Generation**
+   The Scoring and Feedback Generation microservice will assign scores to the essays based on predefined criteria and generate constructive feedback for the students. It will consider various factors such as content quality, organization, creativity, and adherence to the prompt while providing feedback.
 
 ## Implementation
 #### The implementation involves several steps:
