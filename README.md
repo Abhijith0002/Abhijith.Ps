@@ -38,6 +38,9 @@ The model is trained on a combination of training, validation, and test sets. Hy
 
 ## Implementation
 #### The implementation involves several steps:
-
+1. Data preprocessing: Correcting spelling and grammar errors, extracting features, and generating word embeddings.
+2. Model training: Training the MLP model on the preprocessed data.
+3. Evaluation: Assessing the model's performance using appropriate metrics.
+4. Deployment: Building a FastAPI-based web service and containerizing it with Docker for easy deployment and scalability.
 
 
