@@ -75,6 +75,22 @@ To submit an essay for scoring, send a POST request to the API endpoint with the
 ```
 Replace '<your_essay_text_here>' with the content of the essay you want to score.
 
+## Appendix
+- Model Details: Detailed information about the MLP architecture, hyperparameters, and performance metrics.
+- API Documentation: Documentation for the FastAPI endpoints and usage instructions.
+- Docker Configuration: Instructions for building and running the Docker container.
+- References: Citations and acknowledgments for external libraries, datasets, and resources used in the project.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
