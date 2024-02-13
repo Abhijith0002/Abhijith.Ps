@@ -135,7 +135,7 @@ Replace '<your_essay_text_here>' with the content of the essay you want to score
 + Incorporating user feedback to continuously refine and enhance the AES system, ensuring relevance and effectiveness in real-world scenarios.
 
 ## References
-+ Kaggle Essay Scoring Dataset: [[Kaggle essay scoring dataset](https://www.kaggle.com/c/asap-aes/data)]
++ Kaggle Essay Scoring Dataset: [[link](https://www.kaggle.com/c/asap-aes/data)]
 + FastAPI Documentation: [[link](https://fastapi.tiangolo.com/)]
 + Docker Documentation: [[link](https://docker-curriculum.com/)]
 + Word2Vec Documentation: [[link](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/word2vec.html)]
