@@ -25,7 +25,7 @@ Automated essay scoring systems offer several advantages, including efficiency, 
 ## Methodology
 
 ### Problem Statement
-The primary goal is to develop a model that can accurately assess the quality of essays based on various criteria. This includes evaluating grammar, coherence, creativity, and similarity to reference texts.
+The primary objective is to develop a system capable of accurately grading essays based on various criteria such as content understanding, grammar, semantics, and overall quality. Additionally, the system should address challenges related to bias and fairness across different demographic groups and sensitivity to essay prompts.
 ### Data
 The project uses a dataset of essays sourced from Kaggle, consisting of 12,000 essays across different topics and writing prompts. The dataset is preprocessed to correct spelling and grammar errors using the PySpellChecker library.
 ### Techniques
