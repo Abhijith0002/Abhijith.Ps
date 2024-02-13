@@ -4,23 +4,23 @@
 This project aims to develop an automated essay scoring system using machine learning techniques and natural language processing (NLP) models. The system is designed to evaluate essays based on various criteria such as grammar, coherence, creativity, and similarity to reference texts. It utilizes a combination of feature engineering, deep learning models, and external libraries to achieve its goals.
 
 ## Motivation
-Automated essay scoring systems offer several advantages, including efficiency, consistency, and scalability. By automating the essay grading process, educational institutions and testing organizations can save time and resources while ensuring fair and unbiased evaluations. Moreover, such systems can provide immediate feedback to students, helping them improve their writing skills.
+The motivation behind this project stems from the significant time and effort educators invest in manually grading essays. Traditional grading methods are labor-intensive, subjective, and prone to inconsistencies. Automated essay scoring offers a solution to these challenges by leveraging advanced technologies to evaluate essays efficiently and effectively. By automating the grading process, educators can focus more on providing personalized feedback and supporting students' learning journey.
 
 ## Requirements and Constraints
-### Dependencies
-- Python 3.9.2
-- Docker
-### Python Libraries
-- FastAPI
-- TensorFlow
-- Gensim
-- Spacy
-- NLTK
-- PySpellChecker
-- Scikit-learn
-- Matplotlib
-- Pandas
-- NumPy
+
+### Requirements
+- Python 3.9.2 
+- Libraries and packages listed in _'requirements.txt'_
+- Access to Kaggle Essay Scoring Dataset
+- Pre-trained models (Word2Vec, BERT)
+- Docker for containerization (optional)
+  
+### Constraints
+- Limited computational resources
+- Data privacy and security concerns
+- Model fairness and bias mitigation
+- Scalability for handling large volumes of essays
+
 
 ## Methodology
 
