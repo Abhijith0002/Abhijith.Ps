@@ -46,7 +46,8 @@ The model is trained on a combination of training, validation, and test sets. Hy
 ### How to Use
 #### Installation Steps
 1. **Clone the Repository**: Clone the project repository to your local machine using Git.
-   ```python
+
+   ```
     git clone <repository_url>
     ```
 
