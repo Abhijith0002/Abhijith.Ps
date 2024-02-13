@@ -43,4 +43,8 @@ The model is trained on a combination of training, validation, and test sets. Hy
 3. Evaluation: Assessing the model's performance using appropriate metrics.
 4. Deployment: Building a FastAPI-based web service and containerizing it with Docker for easy deployment and scalability.
 
+### How to Use
+#### Installation Steps
+1. **Clone the Repository**: Clone the project repository to your local machine using Git.
+   ``` git clone <repository_url> ```
 
