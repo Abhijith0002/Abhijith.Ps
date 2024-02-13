@@ -23,6 +23,7 @@ Automated essay scoring systems offer several advantages, including efficiency, 
 - NumPy
 
 ## Methodology
+
 ### Problem Statement
 The primary goal is to develop a model that can accurately assess the quality of essays based on various criteria. This includes evaluating grammar, coherence, creativity, and similarity to reference texts.
 ### Data
@@ -35,7 +36,8 @@ The project uses a dataset of essays sourced from Kaggle, consisting of 12,000 e
 ### Experimentation and Validation
 The model is trained on a combination of training, validation, and test sets. Hyperparameters are tuned to optimize performance, and the model's accuracy is validated using cross-validation and test datasets. Additionally, the system incorporates feedback mechanisms to provide meaningful insights and feedback to users.
 
-
+## Implementation
+#### The implementation involves several steps:
 
 
 
