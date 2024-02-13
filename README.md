@@ -10,7 +10,7 @@ The motivation behind this project stems from the significant time and effort ed
 
 ### Requirements
 - Python 3.9.2 
-- Libraries and packages listed in _'requirements.txt'_
+- Libraries and packages listed in ***'requirements.txt'***
 - Access to Kaggle Essay Scoring Dataset
 - Pre-trained models (Word2Vec, BERT)
 - Docker for containerization (optional)
