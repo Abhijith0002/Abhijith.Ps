@@ -21,3 +21,21 @@ Automated essay scoring systems offer several advantages, including efficiency, 
 - Matplotlib
 - Pandas
 - NumPy
+
+## Methodology
+### Problem Statement
+The primary goal is to develop a model that can accurately assess the quality of essays based on various criteria. This includes evaluating grammar, coherence, creativity, and similarity to reference texts.
+### Data
+The project uses a dataset of essays sourced from Kaggle, consisting of 12,000 essays across different topics and writing prompts. The dataset is preprocessed to correct spelling and grammar errors using the PySpellChecker library.
+### Techniques
++ Word Embeddings: Essays are represented as word vectors using Word2Vec to capture semantic relationships between words.
++ Feature Engineering: Various features such as word count, grammar corrections, sentence count, and part-of-speech tags are extracted from the essays to provide additional context for the scoring model.
++ Deep Learning: A Multilayer Perceptron (MLP) model is used for scoring essays based on the extracted features and word embeddings.
++ Evaluation: The model's performance is evaluated using metrics such as Mean Squared Error (MSE) and Cohen's Kappa score.
+### Experimentation and Validation
+The model is trained on a combination of training, validation, and test sets. Hyperparameters are tuned to optimize performance, and the model's accuracy is validated using cross-validation and test datasets. Additionally, the system incorporates feedback mechanisms to provide meaningful insights and feedback to users.
+
+
+
+
+
