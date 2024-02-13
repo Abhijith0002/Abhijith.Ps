@@ -134,8 +134,16 @@ Replace '<your_essay_text_here>' with the content of the essay you want to score
 ### User Feedback Mechanism
 + Incorporating user feedback to continuously refine and enhance the AES system, ensuring relevance and effectiveness in real-world scenarios.
 
+## References
+Kaggle Essay Scoring Dataset: [[kaggle essay scoring dataset]([url](https://www.kaggle.com/c/asap-aes/data))]
+FastAPI Documentation: [link]
+Docker Documentation: [link]
+Word2Vec Documentation: [link]
+BERT Documentation: [link]
+
 ## Conclusion
 Automated Essay Scoring represents a transformative advancement in educational technology, offering a scalable, efficient, and objective solution to essay grading. By leveraging machine learning and NLP techniques, this project demonstrates the feasibility of automating essay evaluation while ensuring fairness, accuracy, and reliability. Continued research and development in this field hold the potential to revolutionize the education system and enhance learning outcomes for students worldwide.
+
 
 
 
