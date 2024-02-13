@@ -7,8 +7,10 @@ This project aims to develop an automated essay scoring system using machine lea
 Automated essay scoring systems offer several advantages, including efficiency, consistency, and scalability. By automating the essay grading process, educational institutions and testing organizations can save time and resources while ensuring fair and unbiased evaluations. Moreover, such systems can provide immediate feedback to students, helping them improve their writing skills.
 
 ## Requirements and Constraints
+### Dependencies
 - Python 3.9.2
 - Docker
+### Python Libraries
 - FastAPI
 - TensorFlow
 - Gensim
