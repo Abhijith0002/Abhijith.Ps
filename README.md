@@ -50,4 +50,35 @@ The model is trained on a combination of training, validation, and test sets. Hy
    ```
     git clone <repository_url>
     ```
+2. **Install Docker**: Install Docker on your system by following the instructions provided on the official Docker website ([https://docs.docker.com/get-docker/](url)).
+3. **Build the Docker Image**: Navigate to the project directory and use the provided Dockerfile to build the Docker image.
+   
+   ```
+   cd <project_directory>
+   docker build -t essay-scoring-system .
+   ```
+4. **Run the Docker Container**: Once the Docker image is built, run the Docker container and specify the port to expose.
+
+   ```
+   docker run -d -p 8000:8000 essay-scoring-system
+   ```
+5. **Access the FastAPI Interface**: You can now access the FastAPI interface through a web browser by navigating to http://localhost:8000 or make HTTP requests programmatically to the API endpoint.
+6. **Submit Essays**: Submit essays to the API endpoint and receive scoring results and feedback.
+
+#### Input Method
+To submit an essay for scoring, send a POST request to the API endpoint with the following JSON payload:
+
+```
+{
+  "essay_content": "<your_essay_text_here>"
+}
+```
+Replace '<your_essay_text_here>' with the content of the essay you want to score.
+
+
+
+
+
+
+
 
