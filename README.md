@@ -21,7 +21,6 @@ The motivation behind this project stems from the significant time and effort ed
 - Model fairness and bias mitigation
 - Scalability for handling large volumes of essays
 
-
 ## Methodology
 
 ### Problem Statement
@@ -37,7 +36,7 @@ The project uses a dataset of essays sourced from Kaggle, consisting of 12,000 e
 + Evaluation: The model's performance is evaluated using metrics such as Mean Squared Error (MSE) and Cohen's Kappa score.
 
 ### Experimentation and Validation
-The model is trained on a combination of training, validation, and test sets. Hyperparameters are tuned to optimize performance, and the model's accuracy is validated using cross-validation and test datasets. Additionally, the system incorporates feedback mechanisms to provide meaningful insights and feedback to users.
+The project employs a combination of machine learning models, including Multi-Layer Perceptron (MLP), Word2Vec, and BERT, for essay evaluation. Model performance is evaluated using metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), and Cohen's Kappa score. Cross-validation techniques ensure robustness and generalization of models.
 
 ### Sub-Microservices
 1. **Text Parsing**
@@ -49,14 +48,52 @@ The model is trained on a combination of training, validation, and test sets. Hy
 4. **Scoring and Feedback Generation**
    The Scoring and Feedback Generation microservice will assign scores to the essays based on predefined criteria and generate constructive feedback for the students. It will consider various factors such as content quality, organization, creativity, and adherence to the prompt while providing feedback.
 
-## Implementation
-#### The implementation involves several steps:
-1. Data preprocessing: Correcting spelling and grammar errors, extracting features, and generating word embeddings.
-2. Model training: Training the MLP model on the preprocessed data.
-3. Evaluation: Assessing the model's performance using appropriate metrics.
-4. Deployment: Building a FastAPI-based web service and containerizing it with Docker for easy deployment and scalability.
+## Implementation Details
 
-### How to Use
+### Model Architecture
+#### Multi-Layer Perceptron (MLP)
+- The MLP model is utilized for regression tasks, predicting essay scores based on extracted features.
+- The architecture consists of multiple fully connected layers with ReLU activation functions.
+- Dropout regularization is applied to prevent overfitting.
+- The output layer provides the final score prediction.
+
+#### Word2Vec Embeddings
+- Word2Vec is employed to generate word embeddings capturing semantic similarity and context in essays.
+- The Word2Vec model is trained on the cleaned essay text to learn word representations.
+- These embeddings are then used as features for essay evaluation.
+
+#### BERT (Bidirectional Encoder Representations from Transformers)
+- BERT is a powerful pre-trained language model used for semantic understanding and contextualized word embeddings.
+- The BERT model is fine-tuned on essay data to capture intricate relationships and nuances in language.
+- It helps improve the accuracy and effectiveness of essay scoring and feedback generation.
+
+### Features
+##### A comprehensive set of features is extracted from essays to facilitate evaluation:
+- Word count
+- Grammar corrections
+- Sentence count
+- Named Entity Recognition (NER) count
+- Part-of-speech tags
+- Semantic similarity
+- Coherence score
+
+### FastAPI Integration
+A FastAPI server is implemented to expose the AES system as a RESTful API. Users can submit essays for scoring and receive feedback in real-time, making the system accessible and user-friendly.
+
+### Dockerization
+The project is containerized using Docker, allowing for easy deployment and scalability. Docker ensures consistency across different environments and simplifies the deployment process, making it suitable for production environments.
+
+## Model Performance
+
+### MLP Model
++ Achieves a Cohen's Kappa score of 0.97, indicating high agreement with human raters.
++ Demonstrates robustness and generalization across different essay prompts and topics.
+
+### Word2Vec and BERT
++ Word2Vec and BERT embeddings significantly enhance the quality of essay evaluation.
++ They capture semantic similarity, contextual understanding, and nuanced language nuances, improving scoring accuracy.
+
+## How to Use
 #### Installation Steps
 1. **Clone the Repository**: Clone the project repository to your local machine using Git.
 
@@ -88,12 +125,17 @@ To submit an essay for scoring, send a POST request to the API endpoint with the
 ```
 Replace '<your_essay_text_here>' with the content of the essay you want to score.
 
-## Appendix
-- Model Details: Detailed information about the MLP architecture, hyperparameters, and performance metrics.
-- API Documentation: Documentation for the FastAPI endpoints and usage instructions.
-- Docker Configuration: Instructions for building and running the Docker container.
-- References: Citations and acknowledgments for external libraries, datasets, and resources used in the project.
+## Future Enhancements
 
+### Advanced NLP Techniques
++ Integration of advanced NLP techniques, such as attention mechanisms and transformer architectures, to further enhance semantic understanding and essay evaluation.
+### Prompt-Specific Models
++ Fine-tuning models for specific essay prompts and topics to improve performance and accuracy.
+### User Feedback Mechanism
++ Incorporating user feedback to continuously refine and enhance the AES system, ensuring relevance and effectiveness in real-world scenarios.
+
+## Conclusion
+Automated Essay Scoring represents a transformative advancement in educational technology, offering a scalable, efficient, and objective solution to essay grading. By leveraging machine learning and NLP techniques, this project demonstrates the feasibility of automating essay evaluation while ensuring fairness, accuracy, and reliability. Continued research and development in this field hold the potential to revolutionize the education system and enhance learning outcomes for students worldwide.
 
 
 
